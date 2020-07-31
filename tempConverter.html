@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<h2>Temperature Converter</h2>
+		<title>Temp Converter</title>
+	</head>
+	<body>
+		<p>Enter the temperature in °Celsius</p><br>
+		<input type = "number" id = "celsius" name = "celsius" value = "Celsius"><br>
+		<button onclick="convert()">Convert</button>
+		<script>
+			function convert() {
+			var fahrenheitTemp;
+            var fahrenheitTemp1;
+			var kelvinTemp;
+			 	fahrenheitTemp = (document.getElementById("celsius").value*(9/5)) + 32;
+                fahrenheitTemp1 = Math.round(fahrenheitTemp);
+                kelvinTemp = document.getElementById("celsius").value + 273.15;
+                document.write(`The temperature in Fahrenheit is ${fahrenheitTemp1} °F` + `<br/>`); 
+				document.write(`The temperature in Kelvin is ${kelvinTemp} °K`);
+			}
+		</script>
+	</body>
+</html>
