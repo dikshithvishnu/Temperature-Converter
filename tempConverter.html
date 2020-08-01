@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<h2>Temperature Converter</h2>
+		<center><h2>Temperature Converter</h2></center>
 		<title>Temp Converter</title>
 	</head>
 	<body>
-		<p>Enter the temperature in °Celsius</p><br>
-		<input type = "number" id = "celsius" name = "celsius" value = "Celsius"><br>
-		<button onclick="convert()">Convert</button>
+	<center><p>Enter the temperature in °Celsius</p><br></center>
+		<span id = "tempinput">
+		<center><input type = "number" id = "celsius" name = "celsius" value = "Celsius"></center><br>
+			</span>
+			<center><button onclick="convert()">Convert</button></center>
+			<p id="display"><center></center></p>
+			<p id="display1"><center></center></p>
 		<script>
 			function convert() {
-			var fahrenheitTemp;
-            var fahrenheitTemp1;
+			var celsiusTemp = document.getElementById("celsius").value;
+            var fahrenheitTemp;
 			var kelvinTemp;
-			 	fahrenheitTemp = (document.getElementById("celsius").value*(9/5)) + 32;
-                fahrenheitTemp1 = Math.round(fahrenheitTemp);
-                kelvinTemp = document.getElementById("celsius").value + 273.15;
-                document.write(`The temperature in Fahrenheit is ${fahrenheitTemp1} °F` + `<br/>`); 
-				document.write(`The temperature in Kelvin is ${kelvinTemp} °K`);
+				 fahrenheitTemp = celsiusTemp*(9/5) + 32;
+				 kelvinTemp = parseInt(document.getElementById("celsius").value) + 273.15;
+				 let fTemp = Math.round(fahrenheitTemp);
+				 document.getElementById("display").innerHTML = "<center>" + "The temperature in Fahrenheit is " + fTemp + "°F" + "</center>";
+				 document.getElementById("display1").innerHTML = "<center>" + "The temperature in Kelvin is " + kelvinTemp + "°K" + "</center>";				 
 			}
 		</script>
 	</body>
