@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<center><h2>Temperature Converter</h2></center>
-		<title>Temp Converter</title>
-	</head>
-	<body>
-	<center><p>Enter the temperature in °Celsius</p><br></center>
-		<span id = "tempinput">
-		<center><input type = "number" id = "celsius" name = "celsius" value = "Celsius"></center><br>
-			</span>
-			<center><button onclick="convert()">Convert</button></center>
-			<p id="display"><center></center></p>
-			<p id="display1"><center></center></p>
-		<script>
-			function convert() {
-			var celsiusTemp = document.getElementById("celsius").value;
-            var fahrenheitTemp;
-			var kelvinTemp;
-				 fahrenheitTemp = celsiusTemp*(9/5) + 32;
-				 kelvinTemp = parseInt(document.getElementById("celsius").value) + 273.15;
-				 let fTemp = Math.round(fahrenheitTemp);
-				 document.getElementById("display").innerHTML = "<center>" + "The temperature in Fahrenheit is " + fTemp + "°F" + "</center>";
-				 document.getElementById("display1").innerHTML = "<center>" + "The temperature in Kelvin is " + kelvinTemp + "°K" + "</center>";				 
-			}
-		</script>
-	</body>
+<title>Temperature Converter</title>
+<head>
+</head>
+<body>
+    <h2>Temperature Converter</h2>
+    <p>Type a value in any of the three temperatures and get output in the other two!</p>
+
+    <p>
+        <label>Celsius</label>
+        <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter_C(this.value)"
+            onchange="temperatureConverter_C(this.value)">
+    </p>
+    <p>Fahrenheit: <span id="outputFahrenheit">°F</span></p>
+    <p>Kelvin: <span id="outputKelvin"></span>°K</p>
+    <p>
+        <label>Fahrenheit</label>
+        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter_F(this.value)"
+            onchange="temperatureConverter_F(this.value)">
+    </p>
+    <p>Celsius: <span id="outputCelsius">°C</span></p>
+    <p>Kelvin: <span id="outputKelvin_1">°K</span></p>
+    <label>Kelvin</label>
+    <input id = "inputKelvin" type = "number" placeholder = "Kelvin" oninput = "temperatureConverter_K(this.value)" onchange = "temperatureConverter_K(this.value)">
+    <p>Celsius: <span id = "outputCelsius_1">°C</span></p>
+    <p>Fahrenheit: <span id = "outputFahrenheit_1">°F</span></p>
+    <script src = "tempConverter.js">        
+    </script>
+</body>
 </html>
