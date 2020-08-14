@@ -1,0 +1,16 @@
+body {
+    font-family: 'Antic';
+    font-size: 22px;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 12px;
+    width: 960px;
+    border-left: 0.25em solid darkgrey;
+}
+header {
+    text-align: center;
+}
+.fahrenheit {
+    background-color: rgba(169, 169, 169, 0.45);
+}
