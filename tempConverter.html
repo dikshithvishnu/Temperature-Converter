@@ -11,32 +11,35 @@
     <header>
     <h2>Temperature Converter</h2>
     </header>
-    <br>
     <section class="container">
     <p>Type a value in any of the three temperature units and get output in the other two!</p>
+
     <div class="celsius">
     <p>
         <label>Celsius</label>
         <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter_C(this.value)"
             onchange="temperatureConverter_C(this.value)">
     </p>
-    </div>
     <p>Fahrenheit: <span id="outputFahrenheit">0</span>°F</p>
     <p>Kelvin: <span id="outputKelvin">0</span>°K</p>
-    <p>
+    </div>
+
     <div class="fahrenheit">
+    <p>
     <label>Fahrenheit</label>
     <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter_F(this.value)" onchange="temperatureConverter_F(this.value)">
     </p>
     <p>Celsius: <span id="outputCelsius">0</span>°C</p>
     <p>Kelvin: <span id="outputKelvin_1">0</span>°K</p>
     </div>
+
     <div class="kelvin">
     <label>Kelvin</label>
     <input id = "inputKelvin" type = "number" placeholder = "Kelvin" oninput = "temperatureConverter_K(this.value)" onchange = "temperatureConverter_K(this.value)">
     <p>Celsius: <span id = "outputCelsius_1">0</span>°C</p>
     <p>Fahrenheit: <span id = "outputFahrenheit_1">0</span>°F</p>
     </div>
+
     </section>
     <script src = "tempConverter.js">        
     </script>
