@@ -22,11 +22,14 @@ header {
     border-radius: 5px;
     padding: 0 2.5px;
 }
-.celsius, .kelvin {
+.celsius {
     background-color: rgba(240,255,240,0.6);
     border-radius: 5px;
     padding: 0 2.5px;
 }
-    
 
+.kelvin {
+    background-color: rgba(240,255,240,0.6);
+    border-radius: 5px;
+    padding: 0 2.5px;
 }
