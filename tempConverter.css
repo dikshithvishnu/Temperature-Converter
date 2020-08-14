@@ -18,7 +18,15 @@ header {
     text-align: center;
 }
 .fahrenheit {
-    background-color: rgba(169, 169, 169, 0.45);
+    background-color: rgba(169, 169, 169,0.45);
     border-radius: 5px;
     padding: 0 2.5px;
+}
+.celsius, .kelvin {
+    background-color: rgba(240,255,240,0.6);
+    border-radius: 5px;
+    padding: 0 2.5px;
+}
+    
+
 }
