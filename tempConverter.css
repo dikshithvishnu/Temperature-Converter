@@ -1,12 +1,18 @@
-body {
+*{
+    margin:0px;
+}
+        body {
     font-family: 'Antic';
     font-size: 22px;
 }
 .container {
-    margin: 0 auto;
+    margin: auto;
     padding: 0 12px;
-    width: 960px;
+    width: 75%;
     border-left: 0.25em solid darkgrey;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
 header {
     text-align: center;
